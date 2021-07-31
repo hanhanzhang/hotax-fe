@@ -1,0 +1,78 @@
+@font-face {
+  font-family: "iconfont"; /* Project id  */
+  src: url('iconfont.ttf?t=1627695836824') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/** 数据管理: 课题管理, 表单管理, 问项管理 */
+.icon-data-manage:before {
+  content: "\e62c";
+}
+.icon-data-subject-manage:before {
+  content: "\e88e";
+}
+.icon-data-form-manage:before {
+  content: "\e63a";
+}
+.icon-data-question-manage:before {
+  content: "\e6cd";
+}
+.icon-data-register-subject:before {
+  content: "\e6c1";
+}
+.icon-data-create-form:before {
+  content: "\e6ec";
+}
+.icon-data-create-question:before {
+  content: "\e61c";
+}
+
+/** 数据应用: 数据录入, 数据导入, 数据查看, 数据导出 */
+.icon-data-application:before {
+  content: "\e748";
+}
+.icon-data-application-register:before {
+  content: "\e749";
+}
+.icon-data-application-import:before {
+  content: "\e6a1";
+}
+.icon-data-application-show:before {
+  content: "\e610";
+}
+.icon-data-application-export:before {
+  content: "\e638";
+}
+
+/** 系统管理: 客户管理(添加客户, 用户信息), 权限管理(资源管理, 角色管理, 授权管理) */
+.icon-system-manage:before {
+  content: "\e660";
+}
+.icon-system-user-mange:before {
+  content: "\e506";
+}
+.icon-system-create-user:before {
+  content: "\e71f";
+}
+.icon-system-user-information:before {
+  content: "\e629";
+}
+.icon-system-permission-manage:before {
+  content: "\e615";
+}
+.icon-system-permission-resource-mange:before {
+  content: "\e607";
+}
+.icon-system-permission-role-manage:before {
+  content: "\e61e";
+}
+.icon-system-permission-grant-manage:before {
+  content: "\e699";
+}
