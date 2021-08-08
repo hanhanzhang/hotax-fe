@@ -60,7 +60,12 @@
 <script>
   import Table from '../../components/CTable'
   import Pagination from "../../components/Pagination";
-  import {async_got_subject_infos, got_subject_table_titles, got_subject_types} from "../../http/subject";
+  import {
+    async_add_subject,
+    async_got_subject_infos,
+    got_subject_table_titles,
+    got_subject_types
+  } from "../../http/subject";
 
   export default {
     data() {
@@ -162,7 +167,13 @@
       },
 
       do_edit() {
-
+        async_add_subject(this.update_form)
+          .then(resp => {
+            console.info(JSON.stringify(resp));
+          })
+          .catch(error => {
+            console.info(JSON.stringify(error));
+          });
       }
     }
   }

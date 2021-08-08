@@ -1,4 +1,6 @@
 import {success} from "../utils/utils";
+import http from "./utils";
+import api from "./api";
 
 // 获取课题类型
 export function got_subject_types() {
@@ -32,4 +34,9 @@ export async function async_got_subject_infos(params) {
       owner: '隋慧萍', desc: '种植体复查课题研究', time: '2021-07-30'}
   ];
   return success(resp);
+}
+
+//
+export async function async_add_subject(params) {
+  return http.post(api.subject_module.add_subject, params)
 }
